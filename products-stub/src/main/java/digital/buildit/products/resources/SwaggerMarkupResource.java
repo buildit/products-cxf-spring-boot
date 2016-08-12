@@ -33,7 +33,7 @@ public class SwaggerMarkupResource {
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/swagger.cmu")
     public String generateConfluenceMarkup() throws Exception {
-        return generate(MarkupLanguage.MARKDOWN);
+        return generate(MarkupLanguage.CONFLUENCE_MARKUP);
     }
 
     @GET
