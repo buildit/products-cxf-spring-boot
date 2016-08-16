@@ -18,5 +18,6 @@
         <module>products-stub</module>
         <module>products-impl</module>
         <module>products-test</module>
+        <module>products-doc</module>
     </modules>
 </project>
