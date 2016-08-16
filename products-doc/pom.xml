@@ -56,7 +56,7 @@
                                 <version>v${parsedVersion.majorVersion}</version>
                                 <description>Sample Products API</description>
                             </info>
-                            <swaggerDirectory>${basedir}/generated/v${parsedVersion.majorVersion}/v${parsedVersion.majorVersion}.${parsedVersion.minorVersion}</swaggerDirectory>
+                            <swaggerDirectory>${basedir}/generated/api:${parent.artifactId}:v${parsedVersion.majorVersion}/api:${parent.artifactId}:v${parsedVersion.majorVersion}:b${parsedVersion.majorVersion}.${parsedVersion.minorVersion}</swaggerDirectory>
                         </apiSource>
                     </apiSources>
                 </configuration>
@@ -74,8 +74,8 @@
                 <artifactId>swagger2markup-maven-plugin</artifactId>
                 <version>1.0.1</version>
                 <configuration>
-                    <swaggerInput>${basedir}/generated/v${parsedVersion.majorVersion}/v${parsedVersion.majorVersion}.${parsedVersion.minorVersion}/swagger.json</swaggerInput>
-                    <outputDir>${basedir}/generated/v${parsedVersion.majorVersion}/v${parsedVersion.majorVersion}.${parsedVersion.minorVersion}</outputDir>
+                    <swaggerInput>${basedir}/generated/api:${parent.artifactId}:v${parsedVersion.majorVersion}/api:${parent.artifactId}:v${parsedVersion.majorVersion}:b${parsedVersion.majorVersion}.${parsedVersion.minorVersion}/swagger.json</swaggerInput>
+                    <outputDir>${basedir}/generated/api:${parent.artifactId}:v${parsedVersion.majorVersion}/api:${parent.artifactId}:v${parsedVersion.majorVersion}:b${parsedVersion.majorVersion}.${parsedVersion.minorVersion}</outputDir>
                     <config>
                         <swagger2markup.markupLanguage>CONFLUENCE_MARKUP</swagger2markup.markupLanguage>
                     </config>
